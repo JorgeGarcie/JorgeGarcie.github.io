@@ -10,7 +10,7 @@ const Hero = () => {
             {/* Bio */}
             <div className="space-y-2 mb-8 md:mb-16">  
               <p className="text-lg leading-relaxed opacity-0 animate-fade-in-up animation-delay-200">
-                Mechanical Engineering graduate student at Stanford University specializing in robotics.
+                I'm currently a mechanical engineering graduate student at Stanford University specializing in robotics.
               </p>
 
               <p className="text-lg leading-relaxed opacity-0 animate-fade-in-up animation-delay-400">
@@ -18,7 +18,7 @@ const Hero = () => {
               </p>
 
               <p className="text-lg leading-relaxed opacity-0 animate-fade-in-up animation-delay-600">
-                Interested in intelligent systems that integrate sensing, autonomy, and human-centered design.
+                Building robotic systems at the intersection of perception, control, and human-centered design.
               </p>
             </div>
 
