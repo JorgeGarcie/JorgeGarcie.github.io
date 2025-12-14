@@ -1,156 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge García</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            margin: 0;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorge Garcia | Robotics Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Hi, I'm Jorge - a Stanford Mechanical Engineering student passionate about building robots." />
+    <meta name="author" content="Jorge" />
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #000;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    <meta property="og:title" content="Jorge | Robotics Engineer" />
+    <meta property="og:description" content="Stanford Mechanical Engineering student passionate about robotics" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1rem;
-        }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main section styles */
-        section {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Welcome and Intro */
-        .intro h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            color: #000;
-        }
-
-        .intro p {
-            font-size: 1.2rem;
-            text-align: center;
-            margin-bottom: 40px;
-            color: #555;
-        }
-
-        /* News section */
-        .news {
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .news h2 {
-            font-size: 2rem;
-            color: #000;
-            margin-bottom: 20px;
-        }
-
-        .news-item {
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .news-item span {
-            font-weight: bold;
-            color: #000;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #000;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#about">About Me</a>
-        <a href="#news">News</a>
-        <a href="#projects">Projects</a>
-        <a href="#honors">Honors and Awards</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Welcome and Intro -->
-    <section class="intro" id="about">
-        <h1> Welcome! </h1>
-        <p>
-            I am a Mechanical Engineer and Robotics Enthusiast currently pursuing my Master’s at Stanford University.
-            My interests include robotics, control systems, and autonomous systems. This page highlights my latest
-            research, projects, and achievements.
-        </p>
-    </section>
-
-    <!-- News Section -->
-    <section class="news" id="news">
-        <h2> News </h2>
-        <div class="news-item">
-            <span>2024</span> 
-        </div>
-        <div class="news-item">
-            <span>2023</span>
-        </div>
-        <div class="news-item">
-            <span>2023</span>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <p>Details about projects will go here.</p>
-    </section>
-
-    <!-- Honors and Awards -->
-    <section class="honors" id="honors">
-        <h2>Honors and Awards</h2>
-        <p>Details about honors and awards will go here.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Made by Jorge García | <a href="https://jalgarcia.github.io">jalgarcia.github.io</a></p>
-    </footer>
-
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
