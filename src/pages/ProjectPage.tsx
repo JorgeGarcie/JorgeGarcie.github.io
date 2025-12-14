@@ -37,7 +37,7 @@ const projectsData: Record<string, ProjectData> = {
     description: "Collaboration with Hamilton Automation.",
     fullDescription: "A collaboration project with Hamilton Automation to develop and optimize automated liquid handling systems. This work involved programming and integrating precision robotics for laboratory automation, improving throughput and accuracy in liquid transfer operations.",
     tags: ["Embedded", "C++", "Automation"],
-    images: ["/inoq_front.jpg"],
+    images: ["/inoq_front.jpg", "/PetriDown.gif", "/Unlidding.gif", "/Lidding.gif"],
   },
   "haptic-pantograph": {
     title: "Haptic Pantograph",
