@@ -9,20 +9,6 @@ const projects = [
     image: "tactile_front.png",
   },
   {
-    title: "Almond Harvesting System",
-    slug: "almond-harvester",
-    description: "Complete almond system to track almond productivity.",
-    tags: ["Arduino", "C++", "3D Printing"],
-    image: "almond_front.jpg",
-  },
-  {
-    title: "Embedded Arcade Game",
-    slug: "arcade-game",
-    description: "Developed an arcade game.",
-    tags: ["Embedded C", "PIC32", "Gait Planning"],
-    image: "simon_punkk.jpg",
-  },
-  {
     title: "Automated Liquid Handler",
     slug: "hamilton",
     description: "Collaboration with Hamilton Automation.",
@@ -42,6 +28,20 @@ const projects = [
     description: "Using a collaborative robot to understand objects to retrieve objects.",
     tags: ["Navigation", "Computer Vision"],
     image: "locobot.png",
+  },
+  {
+    title: "Almond Harvesting System",
+    slug: "almond-harvester",
+    description: "Complete almond system to track almond productivity.",
+    tags: ["Arduino", "C++", "3D Printing"],
+    image: "almond_front.jpg",
+  },
+  {
+    title: "Embedded Arcade Game",
+    slug: "arcade-game",
+    description: "Developed an arcade game.",
+    tags: ["Embedded C", "PIC32", "Gait Planning"],
+    image: "simon_punkk.jpg",
   },
 ];
 
