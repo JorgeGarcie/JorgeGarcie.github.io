@@ -14,11 +14,11 @@ const Hero = () => {
               </p>
 
               <p className="text-lg leading-relaxed opacity-0 animate-fade-in-up animation-delay-400">
-                Previously at Neocis on the Yomi S surgical robot, contributing to the controls team.
+                I was previously at Neocis in the controls team working on the Yomi S surgical robot.
               </p>
 
               <p className="text-lg leading-relaxed opacity-0 animate-fade-in-up animation-delay-600">
-                Building robotic systems at the intersection of perception, control, and human-centered design.
+                I am building robotic systems at the intersection of perception, control, and human-centered design.
               </p>
             </div>
 

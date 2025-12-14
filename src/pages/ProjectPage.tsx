@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
+import { useState, useEffect } from "react";
 
 interface ProjectData {
   title: string;
@@ -43,7 +44,7 @@ const projectsData: Record<string, ProjectData> = {
     description: "Developed an arcade game with haptic feedback.",
     fullDescription: "A haptic feedback system built using a pantograph mechanism. This project combines physical computing with force feedback to create immersive user experiences in gaming and simulation applications, demonstrating advanced control systems and real-time haptic rendering.",
     tags: ["C++", "Haptics", "Processing"],
-    images: ["/pantograph_front.jpg", "/AstroTouch.gif", "/pantograph_cad.jpg", "/pantograph_circuits.jpg"],
+    images: ["/AstroTouch.gif", "/pantograph_cad.jpg", "/pantograph_circuits.jpg", "/pantograph_front.jpg"],
   },
   "collab_robotics": {
     title: "Manipulation and Navigation Robot",
@@ -57,6 +58,24 @@ const projectsData: Record<string, ProjectData> = {
 const ProjectPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = slug ? projectsData[slug] : null;
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  // Close lightbox on ESC key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedImage(null);
+    };
+
+    if (selectedImage) {
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
+    };
+  }, [selectedImage]);
 
   if (!project) {
     return (
@@ -104,7 +123,8 @@ const ProjectPage = () => {
             <img
               src={project.images[0]}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() => setSelectedImage(project.images[0])}
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
@@ -128,7 +148,8 @@ const ProjectPage = () => {
               {project.images.slice(1).map((image, i) => (
                 <div
                   key={i}
-                  className="aspect-square rounded-lg bg-muted border border-border overflow-hidden"
+                  className="aspect-square rounded-lg bg-muted border border-border overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage(image)}
                 >
                   <img
                     src={image}
@@ -141,6 +162,28 @@ const ProjectPage = () => {
           </>
         )}
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 p-2 text-white hover:text-gray-300 transition-colors"
+            aria-label="Close"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img
+            src={selectedImage}
+            alt="Full size"
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </main>
   );
 };
