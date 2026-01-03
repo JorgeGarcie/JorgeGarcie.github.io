@@ -53,11 +53,11 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 450;
+    font-weight: 480;
   }
 
   body {
-    font-weight: 220;
+    font-weight: 420;
   }
 
   code, pre {

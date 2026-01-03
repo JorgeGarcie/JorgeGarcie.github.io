@@ -20,7 +20,7 @@ export const projectsData: ProjectData[] = [
 
     On top of this dataset, I trained learning-based perception models for contact detection, segmentation, and dense depth prediction from monocular RGB input. The perception stack is structured as a lightweight cascade that supports real-time CPU inference, making it suitable for closed-loop manipulation scenarios.
     `,
-    tags: ["ROS2", "Python", "PyTorch", "Operational Space Framework"],
+    tags: ["ROS2", "Python", "PyTorch", " Operational Space Framework"],
     image: "tactile_front.png",
     images: ["/tactile_scan.gif", "/tactile_front.png", "/full_stream.gif"],
   },
@@ -87,7 +87,7 @@ The system was tested during active harvests and successfully produced structure
 User input is collected through a potentiometer and button interface, while feedback is provided through LEDs, a vibration motor for error indication, and a servo-driven token dispenser. A display presents game state information such as score, remaining time, and system messages.
 
 This project focused on integrating sensors, actuators, and real-time control logic on a microcontroller, emphasizing embedded systems design, hardware-software integration, and user interaction.`,
-    tags: ["Embedded C", "PIC32", "Gait Planning"],
+    tags: ["Embedded C", "PIC32", "Mechatronics"],
     image: "simon_punkk.jpg",
     images: ["/simon_punkk.jpg"],
   },
